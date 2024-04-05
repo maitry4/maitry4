@@ -2,8 +2,6 @@
 <h3 align="center">I am passionate about learning, exploring, and working on new technologies. My major areas of interest are AI and Cyber Security.</h3>
 
 ## 💫 About Me:
-- 🔭 I’m currently working on [Eco Connect](https://github.com/maitry4/EcoConnect)
-
 - 🌱 I’m currently learning **Flutter**
 
 - 📝 I regularly write articles on [python-hub.com](https://python-hub.com/)
