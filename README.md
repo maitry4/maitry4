@@ -1,9 +1,6 @@
 <h1 align="center">Hi, I'm Maitry Parikh 👋</h1>
-<h3 align="center">Building Mobile Apps, Backend Systems & AI-Powered Products</h3>
+<h3 align="center">Software Engineer · Mobile, Backend & On-Device AI</h3>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Flutter+%7C+Python+%7C+Laravel%7C+NextJs;Building+research+software+at+DAU;Writing+270%2B+articles+at+Python+Hub;Currently+exploring+on-device+SLMs" alt="Typing SVG" />
-</p>
 
 <p align="center">
   <a href="https://linkedin.com/in/maitry-parikh4"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /></a>
@@ -15,33 +12,45 @@
 
 ### 👩‍💻 About Me
 
-- 🔭 Currently a **Software Engineer Intern at Dhirubhai Ambani University**, working on a research project spanning mobile development, sensor data analysis, and on-device SLM (small language model) integration, under **Prof. Kalyan Sasidhar**
-- ✍️ Created **[Python Hub](https://python-hub.com)** — a dev blog with **270+ articles** and **1,100+ monthly readers**, monetized via Google AdSense
-- 🎓 Pursuing an **MSc in Information Technology** at DAU; B.C.A. in Computer Science from Atmiya Institute of Technology & Science
-- 🛠️ Recently shipped a subscription-based **CMS platform** for The Aishya Magazine — Laravel, content workflows, and Razorpay payment integration
+- 💼 Recently a **Software Engineer Intern at Dhirubhai Ambani University** (May–Aug 2026), where I built a Flutter + FastAPI app for a wearable IMU gait device and ran a quantized **Qwen 2.5 0.5B** model on Android through a custom **C++ JNI layer** on top of llama.cpp, working under **Prof. Kalyan Sasidhar**
+- ⚡ Cut on-device insight generation from **6 min to 3 min** on a Galaxy S23 by tuning the repeat penalty, with output validated by a practicing physiotherapist
+- 🎓 Pursuing **MSc IT at DAU** (CPI 8.9, ranked **5th** in the 2025 entrance exam); B.C.A. from Atmiya University (CPI 9.7)
+- ✍️ Created **[Python Hub](https://python-hub.com)**, a tech blog with **1.5K+ monthly visits**, monetized via Google AdSense
+- 🛡️ Founded **Gujarat's first (and India's third) WiCyS student chapter**; currently a member of **MSTC** at DAU, where I led the Flutter category in Winter of Code and mentored 20+ participants
 
 ---
+
 ### 🚀 Featured Projects
 
-- 🍜 Noodle — Privacy-first AI voice companion built with Flutter, FastAPI, Gemini, AWS Lambda and speech processing. (Building)
+| Project | What it does | Stack |
+|---|---|---|
+| 🍜 **Noodle** | Privacy-first AI voice companion. Stateless FastAPI WebSocket pipeline load-tested to 100+ concurrent audio streams; no recordings or transcripts stored. Shipped as an Android APK. | Flutter, FastAPI, Gemini Live API, Docker, Next.js |
+| 🤖 **RunBait** | AI QA agent for pull requests. Maps a PR's changes to affected user journeys, boots the app in GitHub Actions, and runs those flows in a real browser. AI picks what to test; a deterministic runner executes it. | Next.js, FastAPI, Playwright, Cloudflare AI, Supabase |
+| 🎤 **OffPitch** 🚧 *(work in progress)* | Web-based, invite-only karaoke party hub. Create a session, share the ID, and sing together over WebRTC with song-synced bass/echo audio and visual effects, plus 30-second "Moments" clips you can download and share. | Next.js, Java 21, Spring Boot, WebRTC, PostgreSQL (Supabase), Cloudflare Workers |
+| 🔍 **Xcribe** | AI search assistant that pairs real-time Google search with Gemini and Gemma models. Rotates models automatically on quota limits, streams answers with source citations, and tracks per-user daily usage. | Flutter, BLoC, FastAPI, Firebase, Gemini/Gemma |
+| 🛍️ **Tokoto** | 15+ screen Flutter e-commerce app with cart, wishlist, orders, real-time search, a Gemini 2.0 Flash support chatbot, and 3-language localization. | Flutter, Firebase, GetX |
+| 🧩 **Layered** | Cross-platform puzzle game with 100 levels, procedural generation, BLoC architecture, and offline-first play. | Flutter, BLoC, Firebase Analytics |
 
-- 🧩 Layered — Cross-platform puzzle game with 100 levels, procedural generation, BLoC architecture, Firebase Analytics and offline-first gameplay. (Live on web)
-
----
-
-### 📚 Current Learning Goals
-
-- Advanced Data Structures & Algorithms
-- Competitive Programming
-- System Design
+👉 Github Links: [Noodle](https://github.com/maitry4/noodle) · [RunBait](https://github.com/maitry4/runbait) · [OffPitch](https://github.com/maitry4/OffPitch) · [Xcribe](https://github.com/maitry4/Xcribe) · [Layered](https://github.com/maitry4/layered/) [Live links are in the readmes.]
 
 ---
 
 ### 🛠️ Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,python,php,laravel,fastapi,firebase,mysql,django,git,figma,cpp" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,python,cpp,java,spring,js,ts,fastapi,nextjs,react,tailwind,docker,githubactions,cloudflare,postgres,sqlite,firebase,supabase,androidstudio,git" />
 </p>
+
+**Also:** Riverpod · GetX · BLoC · Android NDK · JNI · BLE · WebSockets · WebRTC · llama.cpp · GGUF quantization · Gemini API · Cloudflare AI · Playwright
+
+---
+
+### 📚 Currently Working On
+
+- Advanced Data Structures & Algorithms
+- Competitive Programming
+- System Design
+- On-device small language models
 
 ---
 
@@ -53,14 +62,14 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=maitry4&theme=dark&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=maitry4&theme=dark&hide_border=true" />
 </p>
 
 ---
 
 ### 🤝 Let's Build Something
 
-I'm always up for collaborating on projects that mix mobile, backend, and AI — or just talking shop about system design. Reach out if you're building something interesting.
+I'm always up for collaborating on projects that mix mobile, backend, and AI, or just talking shop about system design and on-device inference. Reach out if you're building something interesting.
 
 <p align="left">
   <a href="https://linkedin.com/in/maitry-parikh4" target="blank">
