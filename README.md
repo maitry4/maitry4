@@ -1,84 +1,145 @@
-<h1 align="center">Hi, I'm Maitry Parikh 👋</h1>
-<h3 align="center">Software Engineer · Mobile, Backend & On-Device AI</h3>
-
+<img src="./assets/hero.svg" alt="Maitry Parikh — Software Engineer and Product Builder. I turn messy product problems into simple, reliable software." width="100%">
 
 <p align="center">
-  <a href="https://linkedin.com/in/maitry-parikh4"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /></a>
-  <a href="https://python-hub.com"><img src="https://img.shields.io/badge/Blog-python--hub.com-2E9EF7?style=flat&logo=wordpress&logoColor=white" /></a>
-  <a href="mailto:maitryparikh23@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+  <sub><b><a href="#work">WORK</a></b> &nbsp;&nbsp;/&nbsp;&nbsp; <b><a href="#thinking">THINKING</a></b> &nbsp;&nbsp;/&nbsp;&nbsp; <b><a href="#stack">STACK</a></b> &nbsp;&nbsp;/&nbsp;&nbsp; <b><a href="#contact">CONTACT</a></b></sub>
 </p>
 
----
+## Work
 
-### 👩‍💻 About Me
+‼️Three projects. If you only open one: <b>02 — RunBait</b>.
 
-- 💼 Recently a **Software Engineer Intern at Dhirubhai Ambani University** (May–Aug 2026), where I built a Flutter + FastAPI app for a wearable IMU gait device and ran a quantized **Qwen 2.5 0.5B** model on Android through a custom **C++ JNI layer** on top of llama.cpp, working under **Prof. Kalyan Sasidhar**
-- ⚡ Cut on-device insight generation from **6 min to 3 min** on a Galaxy S23 by tuning the repeat penalty, with output validated by a practicing physiotherapist
-- 🎓 Pursuing **MSc IT at DAU** (CPI 8.9, ranked **5th** in the 2025 entrance exam); B.C.A. from Atmiya University (CPI 9.7)
-- ✍️ Created **[Python Hub](https://python-hub.com)**, a tech blog with **1.5K+ monthly visits**, monetized via Google AdSense
-- 🛡️ Founded **Gujarat's first (and India's third) WiCyS student chapter**; currently a member of **MSTC** at DAU, where I led the Flutter category in Winter of Code and mentored 20+ participants
+<br>
 
----
+<img src="./assets/noodle.svg" alt="Noodle architecture: User, Flutter, WebSocket, FastAPI, Gemini and TTS, Response, Discard." width="100%">
 
-### 🚀 Featured Projects
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <b>❓WHAT IT IS</b><br><br>
+      A voice companion with opinions and zero memory. You talk, it answers back (sarcastically), and the exchange is gone. Flutter handles the real-time voice UX; a FastAPI service streams each turn over WebSockets to Gemini and TTS.
+    </td>
+    <td width="50%" valign="top">
+      <b>THE INTERESTING CONSTRAINT</b><br><br>
+      No conversation history, by design. The privacy requirement became the architecture: a stateless request path where audio and text exist only for the length of a turn.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <sub><b>STACK</b></sub> &nbsp; <code>Flutter</code> <code>Riverpod</code> <code>GoRouter</code> <code>Hive</code> <code>FastAPI</code> <code>WebSockets</code> <code>Gemini</code> <code>Docker</code>
+      &nbsp;&nbsp;·&nbsp;&nbsp; <a href="https://github.com/maitry4/noodle"><b>SOURCE ↗</b></a>
+    </td>
+  </tr>
+</table>
 
-| Project | What it does | Stack |
-|---|---|---|
-| 🍜 **Noodle** | Privacy-first AI voice companion. Stateless FastAPI WebSocket pipeline load-tested to 100+ concurrent audio streams; no recordings or transcripts stored. Shipped as an Android APK. | Flutter, FastAPI, Gemini Live API, Docker, Next.js |
-| 🤖 **RunBait** | AI QA agent for pull requests. Maps a PR's changes to affected user journeys, boots the app in GitHub Actions, and runs those flows in a real browser. AI picks what to test; a deterministic runner executes it. | Next.js, FastAPI, Playwright, Cloudflare AI, Supabase |
-| 🎤 **OffPitch** 🚧 *(work in progress)* | Web-based, invite-only karaoke party hub. Create a session, share the ID, and sing together over WebRTC with song-synced bass/echo audio and visual effects, plus 30-second "Moments" clips you can download and share. | Next.js, Java 21, Spring Boot, WebRTC, PostgreSQL (Supabase), Cloudflare Workers |
-| 🔍 **Xcribe** | AI search assistant that pairs real-time Google search with Gemini and Gemma models. Rotates models automatically on quota limits, streams answers with source citations, and tracks per-user daily usage. | Flutter, BLoC, FastAPI, Firebase, Gemini/Gemma |
-| 🛍️ **Tokoto** | 15+ screen Flutter e-commerce app with cart, wishlist, orders, real-time search, a Gemini 2.0 Flash support chatbot, and 3-language localization. | Flutter, Firebase, GetX |
-| 🧩 **Layered** | Cross-platform puzzle game with 100 levels, procedural generation, BLoC architecture, and offline-first play. | Flutter, BLoC, Firebase Analytics |
+<br>
 
-👉 Github Links: [Noodle](https://github.com/maitry4/noodle) · [RunBait](https://github.com/maitry4/runbait) · [OffPitch](https://github.com/maitry4/OffPitch) · [Xcribe](https://github.com/maitry4/Xcribe) · [Layered](https://github.com/maitry4/layered/) [Live links are in the readmes.]
+<img src="./assets/runbait.svg" alt="RunBait pipeline: PR diff, understand repo, affected journeys, generate flows, run in Playwright, capture evidence, AI evaluates, structured verdict." width="100%">
 
----
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <b>❓WHAT IT IS</b><br><br>
+      A PR QA agent that tests the change, not the whole codebase. It reads the diff, works out which user journeys are affected, writes targeted browser flows, runs them in Playwright, and judges the captured evidence.
+    </td>
+    <td width="50%" valign="top">
+      <b>THE INTERESTING CONSTRAINT</b><br><br>
+      Never let the model grade its own guess.<br>
+      <b>AI decides what to test. The browser determines what happened. Evidence determines the verdict.</b>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <sub><b>PROOF</b></sub> &nbsp; Run against a fork of Razorpay's open-source website, it caught a runtime issue in the changed feature.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <sub><b>STACK</b></sub> &nbsp; <code>Next.js</code> <code>React</code> <code>Tailwind</code> <code>FastAPI</code> <code>Supabase / Postgres</code> <code>GitHub OAuth</code> <code>GitHub Actions</code> <code>Playwright</code> <code>Cloudflare AI</code> <code>Pydantic</code>
+      &nbsp;&nbsp;·&nbsp;&nbsp; <a href="https://github.com/maitry4/runbait"><b>SOURCE ↗</b></a>
+    </td>
+  </tr>
+</table>
 
-### 🛠️ Tech Stack
+<br>
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,python,cpp,java,spring,js,ts,fastapi,nextjs,react,tailwind,docker,githubactions,cloudflare,postgres,sqlite,firebase,supabase,androidstudio,git" />
-</p>
+<img src="./assets/layered.svg" alt="Layered: Presentation, Domain, Data architecture and a four-step level generator that avoids an expensive solver." width="100%">
 
-**Also:** Riverpod · GetX · BLoC · Android NDK · JNI · BLE · WebSockets · WebRTC · llama.cpp · GGUF quantization · Gemini API · Cloudflare AI · Playwright
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <b>❓WHAT IT IS</b><br><br>
+      A fully offline, cross-platform Flutter puzzle game with 100 levels, built on a strict Presentation → Domain → Data split.
+    </td>
+    <td width="50%" valign="top">
+      <b>THE INTERESTING CONSTRAINT</b><br><br>
+      Good levels, generated cheaply. Instead of running an expensive solver on every candidate, the generator combines controlled scrambling, valid-move constraints, deadlock detection and homogeneity scoring.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <sub><b>STACK</b></sub> &nbsp; <code>Flutter</code> <code>Dart</code> <code>BLoC / Cubit</code> <code>Hive</code> <code>Firebase Analytics</code>
+      &nbsp;&nbsp;·&nbsp;&nbsp; <a href="https://github.com/maitry4/layered"><b>SOURCE ↗</b></a>
+    </td>
+  </tr>
+</table>
 
----
+## Thinking
 
-### 📚 Currently Working On
+<img src="./assets/thinking.svg" alt="How I work: problem, simplify, find the constraint, design the system, ship, observe, iterate." width="100%">
 
-- Advanced Data Structures & Algorithms
-- Competitive Programming
-- System Design
-- On-device small language models
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <sub><b>01 — SIMPLE UX</b></sub><br>
+      Complexity should live underneath the product.
+    </td>
+    <td width="50%" valign="top">
+      <sub><b>02 — CONSTRAINT FIRST</b></sub><br>
+      Cost, latency, reliability and privacy shape architecture.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <sub><b>03 — EVIDENCE OVER ASSUMPTIONS</b></sub><br>
+      If something matters, measure it or observe it.
+    </td>
+    <td width="50%" valign="top">
+      <sub><b>04 — SHIP</b></sub><br>
+      A technically beautiful system nobody uses is still unfinished.
+    </td>
+  </tr>
+</table>
 
----
+## Stack
 
-### 📈 GitHub Stats
+<sub>Grouped by the problem they solve, not by logo.</sub>
+
+<table width="100%">
+  <tr>
+    <td width="130" valign="top"><sub><b>BACKEND</b></sub></td>
+    <td><code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>SQLite</code> <code>REST</code> <code>WebSockets</code></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub><b>MOBILE</b></sub></td>
+    <td><code>Flutter</code> <code>Dart</code> <code>Android</code> <code>JNI</code> <code>C++</code> <code>BLE</code> <code>Offline-first</code></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub><b>AI / SYSTEMS</b></sub></td>
+    <td><code>LLMs</code> <code>On-device AI</code> <code>Playwright</code> <code>GitHub Actions</code> <code>AI orchestration</code></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub><b>PRODUCT</b></sub></td>
+    <td><code>UX thinking</code> <code>Prototyping</code> <code>Performance</code> <code>System design</code></td>
+  </tr>
+</table>
+
+## Contact
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=maitry4&theme=dark&hide_border=true&include_all_commits=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=maitry4&theme=dark&hide_border=true&layout=compact" />
+  <a href="https://www.linkedin.com/in/maitry4"><code>LinkedIn</code></a>
+  &nbsp;
+  <a href="https://github.com/maitry4"><code>GitHub</code></a>
+  &nbsp;
+  <a href="mailto:maitryparikh23@gmail.com"><code>Email</code></a>
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=maitry4&theme=dark&hide_border=true" />
-</p>
-
----
-
-### 🤝 Let's Build Something
-
-I'm always up for collaborating on projects that mix mobile, backend, and AI, or just talking shop about system design and on-device inference. Reach out if you're building something interesting.
-
-<p align="left">
-  <a href="https://linkedin.com/in/maitry-parikh4" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
-  </a>
-  <a href="https://instagram.com/pythonhub411" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" height="30" width="40" />
-  </a>
-  <a href="https://www.leetcode.com/maitryparikh23" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30" width="40" />
-  </a>
-</p>
