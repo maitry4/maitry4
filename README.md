@@ -140,6 +140,6 @@
   &nbsp;
   <a href="https://github.com/maitry4"><code>GitHub</code></a>
   &nbsp;
-  <a href="mailto:maitryparikh23@gmail.com"><code>Email</code></a>
+  <a href="mailto:maitryparikh4@gmail.com"><code>Email</code></a>
 </p>
 
